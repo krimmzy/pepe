@@ -1,0 +1,413 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #bad1c2;
+}
+
+body {
+  padding-top: 80px; /* Space for the fixed header */
+}
+
+/* Header Styling */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #bad1c2;
+  border-bottom: 8px solid black;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  margin-top: 0;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.menu-icon .line {
+  width: 100%;
+  height: 4px;
+  background-color: green;
+  border: 1px solid black;
+}
+
+/* Custom Section */
+.custom-section {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  padding: 10px;
+  background-color: #6699cc;
+  border: 4px solid black;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  overflow: hidden; /* Ensures the green ball doesn't overflow */
+}
+
+/* Glowing Green Ball */
+
+/* Presale Section */
+.presale-section {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+}
+
+/* Top Icons */
+.top-icons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  width: 20px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.peach {
+  background-color: peachpuff;
+}
+
+/* Title and Progress */
+.presale-title {
+  margin: 30px 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.progress-text {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.progress-bar-container {
+  width: 90%;
+  height: 15px;
+  background-color: #3b3b4d;
+  border-radius: 10px;
+  margin: 10px auto;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.progress-bar {
+  width: 82%; /* Adjust to represent the percentage of progress */
+  height: 100%;
+  background-color: green;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Information Text */
+.info {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Divider */
+.divider {
+  width: 80%;
+  height: 1px;
+  background-color: white;
+  margin: 15px auto;
+}
+
+/* Price Info */
+.price-info {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Button Container */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #6699cc;
+  gap: 15px;
+}
+
+.payment-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #6699cc;
+  padding: 10px 20px;
+  border: 2px solid black;
+
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.payment-button:hover {
+  background-color: #3333ff; /* Change background color on hover */
+}
+
+/* Input Section */
+.input-section {
+  margin: 20px 0;
+  text-align: left;
+  background-color: #6699cc;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+
+  color: white;
+}
+
+.input-container .max-button {
+  padding: 10px 15px;
+  color: white;
+  background-color: #6699cc;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-container .max-button:hover {
+  background-color: green;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid white;
+  background-color: #6699cc;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+}
+
+/* Buttons Grid */
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.action-button {
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #6699cc;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: green;
+}
+
+/* Powered By Section */
+.powered-by {
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.powered-by p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.powered-by img {
+  width: 100px;
+  height: auto;
+}
+
+.chat-gif-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.chat-box {
+  background-color: yellow;
+  border: 4px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  width: 600px;
+  height: 50px;
+}
+
+.gif-box img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.box-section {
+  background-color: #6699cc;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 5px solid black;  /* Thicker border on the right */
+  border-bottom: 5px solid black;  /* Thicker border on the bottom */
+  padding: 10px;  /* Space inside the box */
+  margin: 10px;  /* Space outside the border */
+  color: white;  /* White text for contrast */
+  border-radius: 15px;
+}
+
+.box-section h1 {
+  font-size: 1.6em;
+  color: #000;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+.buy {
+ 
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 5px solid black;  /* Thicker border on the right */
+  border-bottom: 5px solid black;  /* Thicker border on the bottom */
+  padding: 10px;  /* Space inside the box */
+  margin: 10px;  /* Space outside the border */
+  color: white;  /* White text for contrast */
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 1.6em;
+  color: #000;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 0px;
+  padding-top: 30px;
+}
+
+.buyy {
+  background-color: #6699cc;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 5px solid black;  /* Thicker border on the right */
+  border-bottom: 5px solid black;  /* Thicker border on the bottom */
+  padding: 10px;  /* Space inside the box */
+  margin: 10px;  /* Space outside the border */
+  color: white;  /* White text for contrast */
+  border-radius: 15px;
+}
+
+ol {
+counter-reset: item;
+list-style-type: none;
+}
+
+ol li {
+counter-increment: item;
+margin-bottom: 20px
+}
+
+ol li:before {
+content: counter(item);
+display: inline-block;
+width: 20px;
+height: 20px;
+border: 1px solid black;
+border-radius: 50%;
+background-color: white;
+color: black;
+text-align: center;
+font-weight: bold;
+margin-right: 5px;
+}
