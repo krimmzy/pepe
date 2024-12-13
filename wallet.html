@@ -29,27 +29,19 @@ p {
   text-align: center;
 }
 
-
-.icons {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-}
-
-
 .icons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between; /* Distribute space evenly */
 }
 
 .icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
-  width: 30%; /* Ensure 3 icons fit per row */
-  box-sizing: border-box; /* Prevent extra width from padding or margin */
+  margin: 10px 0; /* Reduce vertical margin */
+  width: calc(33.33% - 10px); /* Adjust for spacing */
+  box-sizing: border-box; /* Include padding/margin in width */
 }
 
 .icon img {
@@ -59,16 +51,15 @@ justify-content: space-around;
 
 @media (max-width: 768px) {
   .icon {
-    width: 33.33%; /* Each icon takes one-third of the row */
+    width: calc(33.33% - 10px); /* Ensure 3 icons on medium screens */
   }
 }
 
 @media (max-width: 480px) {
   .icon {
-    width: 33.33%; /* Still 3 icons per row for smaller screens */
+    width: calc(33.33% - 10px); /* Still 3 icons per row on small screens */
   }
 }
-
   
 .icon a {
 text-decoration: none;
